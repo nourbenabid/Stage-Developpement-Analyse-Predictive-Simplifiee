@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prévisions SARIMA</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f5f6fa; margin: 0; padding: 20px; }
+        h1 { text-align: center; color: #2c3e50; }
+        table { margin: 20px auto; border-collapse: collapse; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        th, td { padding: 12px 20px; border: 1px solid #ddd; text-align: center; }
+        th { background-color: #3498db; color: white; }
+        .back { text-align: center; margin-top: 20px; }
+        a { color: #3498db; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Prévisions SARIMA pour les ventes</h1>
+    <table>
+        <tr>
+            <th>Mois</th>
+            <th>Ventes prévues</th>
+        </tr>
+        {% for date, value in forecast_data %}
+        <tr>
+            <td>{{ date }}</td>
+            <td>{{ value }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <div style="max-width: 900px; margin: 40px auto;">
+        {{ graph_html | safe }}
+    </div>
+
+   <div class="back">
+    <a href="/">← Retour à la prédiction churn</a> |
+    <a href="/download_forecast_excel">Télécharger le tableau en Excel</a>
+   </div>
+
+
+</body>
+</html>
