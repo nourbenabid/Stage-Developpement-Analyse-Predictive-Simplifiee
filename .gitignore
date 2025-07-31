@@ -1,0 +1,10 @@
+# Ignorer les fichiers lourds et générés
+data/
+*.joblib
+*.pkl
+*.csv
+
+# Fichiers système
+__pycache__/
+*.pyc
+.env
