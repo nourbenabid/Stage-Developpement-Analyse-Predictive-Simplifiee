@@ -21,22 +21,22 @@ L'objectif principal est de concevoir une plateforme permettant :
 
 Projet/
 ├── Connecteurs/
-   └── connecteurs.py
+│   └── connecteurs.py
 ├── Preprocessing/
-   └── preprocessing.py
+│   └── preprocessing.py
 ├── Modeling/
-   └── modeling.py
+│   └── modeling.py
 ├── api/
-   ├── app.py
-   ├── templates/
-     ├── index.html
-     └── forecast.html
+│   ├── app.py
+│   ├── templates/
+│   │   ├── index.html
+│   │   └── forecast.html
 ├── data/
-   └── (datasets téléchargés et nettoyés)
+│   └── (datasets téléchargés et nettoyés)
 ├── tests/
-    ├── test_connecteurs.py
-    ├── test_preprocessing.py
-    └── test_modeling.py
+│   ├── test_connecteurs.py
+│   ├── test_preprocessing.py
+│   └── test_modeling.py
 ├── best_churn_model.joblib
 ├── best_forecasting_model_SARIMA.joblib
 └── .env
