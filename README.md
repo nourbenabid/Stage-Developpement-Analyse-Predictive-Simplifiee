@@ -18,7 +18,7 @@ L'objectif principal est de concevoir une plateforme permettant :
     différents cas d'usage métier.
 
 **2. Architecture générale du projet**
-
+```
 Projet/
 ├── Connecteurs/
 │   └── connecteurs.py
@@ -40,7 +40,7 @@ Projet/
 ├── best_churn_model.joblib
 ├── best_forecasting_model_SARIMA.joblib
 └── .env
-
+```
  Connecteurs/ : gestion des connecteurs (Kaggle, World Bank, MongoDB).
 
 Preprocessing/ : nettoyage et préparation des données.
